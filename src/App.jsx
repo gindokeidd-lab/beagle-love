@@ -458,7 +458,7 @@ function DownloadSection() {
     <section id="download" className="section download-section">
       <div className="section__inner download-layout">
         <div className="download-layout__cover">
-          <img src={asset('images/pdf-cover.png')} alt="ビーグル犬プレゼン資料の表紙画像" />
+          <img src={asset('images/beagle-pdf-cover.png')} alt="ビーグル犬プレゼン資料の表紙画像" />
         </div>
 
         <div className="download-layout__content">
