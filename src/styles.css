@@ -1036,21 +1036,33 @@ p {
 
   .history-section {
     min-height: auto;
+    padding-block: 68px 76px;
+  }
+
+  .history-section__content {
+    width: min(76vw, 310px);
+    margin-right: auto;
+    margin-left: clamp(16px, 5vw, 22px);
   }
 
   .history-section__image {
-    object-position: 70% center;
+    object-position: 82% center;
   }
 
   .history-section__overlay {
     background:
-      linear-gradient(180deg, rgba(255, 254, 250, 0.56) 0%, rgba(255, 254, 250, 0.38) 48%, rgba(255, 254, 250, 0.64) 100%),
-      rgba(255, 254, 250, 0.08);
+      linear-gradient(180deg, rgba(255, 254, 250, 0.42) 0%, rgba(255, 254, 250, 0.2) 48%, rgba(255, 254, 250, 0.5) 100%),
+      rgba(255, 254, 250, 0.04);
   }
 
   .reading-text {
-    background: rgba(255, 254, 250, 0.78);
-    padding: 20px;
+    background: rgba(255, 254, 250, 0.72);
+    color: var(--green-950);
+    padding: 20px 18px;
+  }
+
+  .reading-text p {
+    color: #354b3e;
   }
 
   .button {
