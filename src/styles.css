@@ -399,11 +399,16 @@ p {
 }
 
 .cute-card__image-wrap img,
-.challenge-card img,
 .status-layout__image img,
 .download-layout__cover img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+}
+
+.challenge-card > img {
+  width: 100%;
+  height: 240px;
   object-fit: cover;
 }
 
@@ -455,10 +460,13 @@ p {
 }
 
 .challenge-card__body {
+  position: relative;
+  z-index: 1;
   display: grid;
   align-content: start;
   gap: 16px;
   padding: 24px;
+  background: var(--paper);
 }
 
 .challenge-card .card-kicker {
@@ -966,10 +974,62 @@ p {
   }
 
   .challenge-card {
-    grid-template-rows: 230px 1fr;
+    display: block;
+    background: var(--paper);
   }
 
-  .challenge-card__body,
+  .challenge-card > img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    border-bottom: 1px solid rgba(36, 85, 61, 0.16);
+    background: var(--green-150);
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .challenge-card__body {
+    position: relative;
+    z-index: 1;
+    gap: 14px;
+    padding: 22px 20px 24px;
+    background: #fffefa;
+  }
+
+  .challenge-card__body h3 {
+    color: var(--green-950);
+    font-size: 1.28rem;
+    line-height: 1.38;
+  }
+
+  .challenge-card__body p {
+    color: #32483b;
+    font-size: 0.98rem;
+    line-height: 1.82;
+  }
+
+  .challenge-card .card-kicker {
+    gap: 8px;
+    color: var(--coral-500);
+    font-size: 0.84rem;
+  }
+
+  .challenge-card .card-kicker svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .audio-button {
+    min-height: 52px;
+    padding: 10px 14px;
+    white-space: normal;
+  }
+
+  .audio-button span {
+    min-width: 0;
+  }
+
   .status-card {
     padding: 20px;
   }
@@ -978,11 +1038,18 @@ p {
     min-height: auto;
   }
 
+  .history-section__image {
+    object-position: 70% center;
+  }
+
   .history-section__overlay {
-    background: rgba(255, 254, 250, 0.88);
+    background:
+      linear-gradient(180deg, rgba(255, 254, 250, 0.56) 0%, rgba(255, 254, 250, 0.38) 48%, rgba(255, 254, 250, 0.64) 100%),
+      rgba(255, 254, 250, 0.08);
   }
 
   .reading-text {
+    background: rgba(255, 254, 250, 0.78);
     padding: 20px;
   }
 
