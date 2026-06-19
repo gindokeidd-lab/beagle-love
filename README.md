@@ -1,6 +1,7 @@
 # ビーグルという幸せ
 
 ビーグル犬の魅力を伝える、趣味・非販売目的の無料LPです。React/Viteで作成し、GitHub Pagesでの無料公開を想定しています。
+https://gindokeidd-lab.github.io/beagle-love/
 
 ## 内容
 
